@@ -1,0 +1,604 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #333;
+    color: #eee;
+}
+
+a {
+    color: #6fa2ff;
+}
+
+a:hover {
+    color: #8cb4ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nunito", sans-serif;
+}
+
+#main {
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+    background: #1e1e1e;
+    color: #eee;
+}
+
+@media (max-width: 1199px) {
+    #main {
+        padding: 20px;
+    }
+}
+
+.pagetitle h1 {
+    color: #6fa2ff;
+}
+
+.back-to-top {
+    background: #6fa2ff;
+}
+
+.back-to-top i {
+    color: #fff;
+}
+
+.back-to-top:hover {
+    background: #8cb4ff;
+}
+
+.bg-primary-light {
+    background-color: #355885;
+    border-color: #355885;
+}
+
+.bg-secondary-light {
+    background-color: #333;
+    border-color: #333;
+}
+
+.bg-success-light {
+    background-color: #2e6144;
+    border-color: #2e6144;
+}
+
+.bg-danger-light {
+    background-color: #752c2c;
+    border-color: #752c2c;
+}
+
+.bg-warning-light {
+    background-color: #7d671f;
+    border-color: #7d671f;
+}
+
+.bg-info-light {
+    background-color: #1b5265;
+    border-color: #1b5265;
+}
+
+.bg-dark-light {
+    background-color: #262626;
+    border-color: #262626;
+}
+
+.card {
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.card-header,
+.card-footer {
+    background-color: #262626;
+    color: #bbb;
+}
+
+.card-title {
+    color: #6fa2ff;
+}
+
+.card-title span {
+    color: #999;
+}
+
+.card-body {
+    background: #1e1e1e;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.alert-heading {
+    color: #6fa2ff;
+}
+
+.btn-close {
+    background-size: 25%;
+}
+
+.accordion-item {
+    border: 1px solid #333;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #6fa2ff;
+    background-color: #1e1e1e;
+}
+
+.accordion-flush .accordion-button {
+    background: none;
+    border: 0;
+}
+
+.accordion-flush .accordion-button:not(.collapsed) {
+    color: #6fa2ff;
+}
+
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+    color: #ccd5e6;
+    /* Lighter grey for breadcrumbs */
+    font-weight: 600;
+}
+
+.breadcrumb a {
+    color: #ccd5e6;
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #b3c2e6;
+    /* Lighter blue for hover */
+}
+
+.breadcrumb .breadcrumb-item::before {
+    color: #ccd5e6;
+}
+
+.breadcrumb .active {
+    color: #b3c2e6;
+    font-weight: 600;
+}
+
+/* Bordered Tabs */
+.nav-tabs-bordered {
+    border-bottom: 2px solid #2c384e;
+    /* Darker blue for border */
+}
+
+.nav-tabs-bordered .nav-link {
+    margin-bottom: -2px;
+    border: none;
+    color: #ccd5e6;
+}
+
+.nav-tabs-bordered .nav-link:hover,
+.nav-tabs-bordered .nav-link:focus {
+    color: #a2b3e6;
+    /* Lighter blue for hover */
+}
+
+.nav-tabs-bordered .nav-link.active {
+    background-color: #2c384e;
+    /* Darker blue for active */
+    color: #a2b3e6;
+    /* Lighter blue for active text */
+    border-bottom: 2px solid #a2b3e6;
+    /* Lighter blue for active border */
+}
+
+/* Header and Navigation */
+.header {
+    background-color: #2c384e;
+    /* Darker blue for header background */
+    color: #ccd5e6;
+    /* Lighter grey for text */
+}
+
+.header .toggle-sidebar-btn {
+    color: #ccd5e6;
+    /* Lighter grey for toggle button */
+}
+
+.header .search-form input {
+    color: #ccd5e6;
+    /* Lighter grey for input text */
+    border: 1px solid #2c384e;
+    /* Darker blue for input border */
+}
+
+.header .search-form input:focus,
+.header .search-form input:hover {
+    border: 1px solid #4154f1;
+    /* Lighter blue for focus/hover border */
+}
+
+.header-nav .nav-icon {
+    color: #ccd5e6;
+    /* Lighter grey for navigation icons */
+}
+
+.header-nav .nav-profile {
+    color: #ccd5e6;
+    /* Lighter grey for profile text */
+}
+
+.header-nav .notifications .notification-item:hover,
+.header-nav .messages .message-item:hover,
+.header-nav .profile .dropdown-item:hover {
+    background-color: #2c384e;
+    /* Darker blue for item hover */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #2c384e;
+    /* Darker blue for sidebar background */
+    color: #ccd5e6;
+    /* Lighter grey for sidebar text */
+}
+
+/* Scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #2c384e;
+    /* Darker blue for scrollbar background */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+
+    #main,
+    #footer {
+        margin-left: 300px;
+    }
+
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer {
+        margin-left: 0;
+    }
+
+    .toggle-sidebar .sidebar {
+        left: -300px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+        left: 0;
+    }
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 5px;
+}
+
+.sidebar-nav .nav-heading {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #899bbd;
+    font-weight: 600;
+    margin: 10px 0 5px 15px;
+}
+
+.sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ccd5e6;
+    transition: 0.3s;
+    background: #2c384e;
+    /* Darker blue for background */
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.sidebar-nav .nav-link i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #ccd5e6;
+}
+
+.sidebar-nav .nav-link.collapsed {
+    color: #ccd5e6;
+    background: #fff;
+    /* White background for collapsed state */
+}
+
+.sidebar-nav .nav-link.collapsed i {
+    color: #899bbd;
+}
+
+.sidebar-nav .nav-link:hover {
+    color: #aab7cf;
+    /* Lighter blue for hover */
+    background: #4154f1;
+    /* Lighter blue for hover background */
+}
+
+.sidebar-nav .nav-link:hover i {
+    color: #aab7cf;
+    /* Lighter blue for hover */
+}
+
+.sidebar-nav .nav-link .bi-chevron-down {
+    margin-right: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
+    transform: rotate(180deg);
+}
+
+.sidebar-nav .nav-content {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-content a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ccd5e6;
+    transition: 0.3s;
+    padding: 10px 0 10px 40px;
+}
+
+.sidebar-nav .nav-content a i {
+    font-size: 6px;
+    margin-right: 8px;
+    line-height: 0;
+    border-radius: 50%;
+}
+
+.sidebar-nav .nav-content a:hover,
+.sidebar-nav .nav-content a.active {
+    color: #aab7cf;
+    /* Lighter blue for hover and active states */
+}
+
+.sidebar-nav .nav-content a.active i {
+    background-color: #aab7cf;
+}
+
+/* Dashboard */
+.dashboard {
+    background-color: #2c384e;
+    /* Darker blue for dashboard background */
+    color: #ccd5e6;
+}
+
+.dashboard .filter .icon {
+    color: #ccd5e6;
+}
+
+.dashboard .filter .icon:hover,
+.dashboard .filter .icon:focus {
+    color: #aab7cf;
+    /* Lighter blue for hover and focus */
+}
+
+.dashboard .filter .dropdown-header h6 {
+    color: #aab7cf;
+}
+
+.dashboard .filter .dropdown-item {
+    color: #ccd5e6;
+}
+
+.dashboard .info-card h6 {
+    color: #ccd5e6;
+}
+
+.dashboard .card-icon {
+    color: #ccd5e6;
+}
+
+.dashboard .sales-card .card-icon {
+    color: #4154f1;
+    background: #f6f6fe;
+}
+
+.dashboard .revenue-card .card-icon {
+    color: #2eca6a;
+    background: #e0f8e9;
+}
+
+.dashboard .customers-card .card-icon {
+    color: #ff771d;
+    background: #ffecdf;
+}
+
+.dashboard .activity .activity-item .activite-label {
+    color: #aab7cf;
+}
+
+.dashboard .activity .activity-item .activite-label::before {
+    background-color: #2c384e;
+    /* Darker blue for label indicator */
+}
+
+.dashboard .activity .activity-item .activity-badge {
+    border: 3px solid #2c384e;
+    /* Darker blue for badge border */
+}
+
+.dashboard .news h4 a {
+    color: #ccd5e6;
+}
+
+.dashboard .news h4 a:hover {
+    color: #aab7cf;
+    /* Lighter blue for hover */
+}
+
+.dashboard .news p {
+    color: #aab7cf;
+}
+
+.dashboard .recent-sales .table thead {
+    background: #4154f1;
+}
+
+/* Dark Mode Styles */
+
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+.dashboard .top-selling .table thead {
+    background: #404040;
+}
+
+.iconslist .icon {
+    background-color: #333;
+    color: #ddd;
+}
+
+.iconslist .label {
+    color: #999;
+}
+
+.profile .profile-card h2 {
+    color: #fff;
+}
+
+.profile .profile-card h3 {
+    color: #ddd;
+}
+
+.profile .profile-card .social-links a {
+    color: #ccc;
+}
+
+.profile .profile-card .social-links a:hover {
+    color: #fff;
+}
+
+.profile .profile-overview .card-title {
+    color: #fff;
+}
+
+.profile .profile-overview .label {
+    color: #aaa;
+}
+
+.profile .profile-edit label {
+    color: #aaa;
+}
+
+.faq .basic h6 {
+    color: #9fa8da;
+}
+
+.faq .basic p {
+    color: #b0bec5;
+}
+
+.contact .info-box {
+    background: #333;
+}
+
+.contact .info-box i {
+    color: #9fa8da;
+}
+
+.contact .info-box h3 {
+    color: #fff;
+}
+
+.contact .info-box p {
+    color: #ccc;
+}
+
+.contact .php-email-form .error-message {
+    background: #b71c1c;
+}
+
+.contact .php-email-form .sent-message {
+    background: #388e3c;
+}
+
+.contact .php-email-form .loading {
+    background: #333;
+}
+
+.contact .php-email-form .loading:before {
+    border: 3px solid #388e3c;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+    border-color: #9fa8da;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #9fa8da;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: #a7ffeb;
+}
+
+.error-404 {
+    background: #333;
+}
+
+.error-404 h1 {
+    color: #9fa8da;
+}
+
+.error-404 h2 {
+    color: #fff;
+}
+
+.error-404 .btn {
+    background: #51678f;
+    color: #fff;
+}
+
+.error-404 .btn:hover {
+    background: #3e4f6f;
+}
+
+.footer {
+    background: #1c1c1c;
+    color: #ccc;
+}
+
+.footer .copyright {
+    color: #fff;
+}
+
+.footer .credits {
+    color: #fff;
+}
